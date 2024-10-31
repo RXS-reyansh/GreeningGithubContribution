@@ -24,7 +24,7 @@ const markCommit = (x, y) => {
 
 const makeCommits = (n) => {
   if(n===0) return simpleGit().push();
-  const x = random.intz(0, 54); // This is the extent of X coordinates of Contri. table and can be surely changed accordingly
+  const x = random.int(0, 54); // This is the extent of X coordinates of Contri. table and can be surely changed accordingly
   const y = random.int(0, 6); // This is the extent of Y coordinates of Contri. table and can also be surely changed accordingly
   const date = moment().subtract(1, "y").add(1, "d").add(x, "w").add(y, "d").format();
 
